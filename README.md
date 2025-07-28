@@ -2,6 +2,8 @@
 
 A Retrieval-Augmented Generation (RAG) chatbot that allows you to upload PDF documents and ask questions about their content using local AI.
 
+https://ragdocai.streamlit.app/
+
 ## Features
 
 - 📄 Upload and process PDF documents
