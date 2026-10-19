@@ -86,8 +86,9 @@ streamlit run app.py          # opens http://localhost:8501
 docker-compose up --build     # or ./run_docker.sh
 ```
 
-The container needs to reach Ollama running on your machine. If answers fail, set
-`OLLAMA_HOST=http://host.docker.internal:11434` in `docker-compose.yml`.
+The container talks to Ollama running on your own machine (`OLLAMA_HOST` is already set in
+`docker-compose.yml`), so start Ollama on the host first. On Mac and Windows (Docker Desktop) plain `ollama serve` works;
+on Linux, let containers reach it with `OLLAMA_HOST=0.0.0.0 ollama serve`.
 
 ### Use a different model
 
